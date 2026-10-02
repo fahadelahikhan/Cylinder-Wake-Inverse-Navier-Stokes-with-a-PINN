@@ -48,7 +48,8 @@ At t = 10 the maximum absolute errors are 0.109 (u), 0.041 (v) and 0.037 (p), co
 ![PINN vs reference](figures/cylinder_fields.png)
 ![Parameter convergence](figures/cylinder_lambda.png)
 
-Animation of the vortex street (true flow, PINN, difference): ![Animation](figures/cylinder_wake.gif)
+Animation of the vortex street (true flow, PINN, difference):
+![Animation](figures/cylinder_wake.gif)
 
 ## Limitations (please read)
 
