@@ -58,7 +58,7 @@ Animation of the vortex street (true flow, PINN, difference):
 - **L-BFGS did not converge;** training was stopped at a fixed cap, not by a convergence test. Field errors were still improving.
 - **The validation snapshots are full-grid snapshots,** so about 0.5% of their points were in the training set. The errors are not from a strictly separate test set.
 - **Reconstruction, not forecasting:** all snapshots lie inside the training time range.
-- **Single seed, single subsample, clean data.** No noise or seed study, and no from-scratch rerun of the notebook yet.
+- **Single seed, single subsample, clean data.** No noise or seed study. A full from-scratch rerun (fresh Colab session, same seed) reproduced every printed number, so the run is deterministic, but that does not test robustness across seeds or subsamples.
 - Pressure error grows slightly at later snapshots (about 3.5% at t = 2 to 5% at t = 14 to 18); unexplained.
 - The GIF error colorbar is scaled to the worst frame over all frames.
 - **Bridge to own CFD data is future work.** No OpenFOAM or Fluent case has been run yet. When one exists, the PINN needs (x, y, t, u, v) in non-dimensional units (cylinder diameter 1, free stream 1), updated `lb`/`ub`, and a few thousand training points.
